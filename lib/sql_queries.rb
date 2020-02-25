@@ -52,6 +52,6 @@ def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_b
   FROM Pledges
   INNER JOIN Projects
   ON Pledges.project_id = Projects.id
-  GROUP BY SUM(Pledges.amount)
+  GROUP BY Pledges.amount
   WHERE Projects.category = 'books'"
 end
